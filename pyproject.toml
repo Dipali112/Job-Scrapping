@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "indeed-jobs-scraper"
+version = "2.0.0"
+description = "A modern Python tool to automate job searching and scraping on Indeed."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "python-jobspy>=1.1.82",
+    "pandas>=2.0.0",
+    "beautifulsoup4>=4.12.0",
+    "requests>=2.31.0",
+    "curl-cffi>=0.7.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
